@@ -1,0 +1,23 @@
+.request-call {
+  margin: 50px 0;
+  @media (min-width: 1024px) {
+    margin: 100px 0;
+  }
+  h2 {
+    font-size: clamp(20px, 3.5vw, 55px);
+    margin: 20px 0 15px;
+    text-align: center;
+    @media (min-width: 1024px) {
+      text-align: start;
+      margin-top: 0;
+    }
+  }
+  .search-request-call-text {
+    background: url('../img/request-2.png') no-repeat center center;
+    background-size: cover;
+
+    @media (min-width: 1024px) {
+      height: 420px;
+    }
+  }
+}

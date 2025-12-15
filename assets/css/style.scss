@@ -1,0 +1,102 @@
+@use 'hero';
+@use 'search';
+@use 'serve';
+@use 'testimonials';
+@use 'order-online';
+@use 'products';
+@use 'offer';
+@use 'faq';
+@use 'news';
+@use 'regions';
+@use 'text';
+@use 'footer';
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  font-size: clamp(30px, 3.5vw, 55px);
+  line-height: 110%;
+  text-align: center;
+  color: #141718;
+}
+
+.swiper-section-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  .swiper-section-pagination {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .swiper-pagination-bullet {
+      width: 7px;
+      height: 7px;
+      margin: 0 5px;
+      background: transparent;
+      border: 1px solid #aa0e17;
+      border-radius: 50%;
+      opacity: 1;
+      transition: all 0.3s ease;
+      &.swiper-pagination-bullet-active {
+        background: #aa0e17;
+      }
+    }
+  }
+  .btn-section-prev,
+  .btn-section-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    color: #aa0e17;
+    &:hover {
+      color: #141718;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

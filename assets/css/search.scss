@@ -1,0 +1,135 @@
+.search {
+  h2 {
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: clamp(30px, 3.5vw, 55px);
+    text-align: center;
+    color: #141718;
+    margin-bottom: 20px;
+  }
+
+  .search-request-call-text {
+    background: url('../img/request.png') no-repeat center center;
+    background-size: cover;
+  }
+  &-order,
+  &-request-call {
+    margin-bottom: 35px;
+    @media (min-width: 1024px) {
+      margin-bottom: 50px;
+    }
+    &-text {
+      background: url('../img/bffde6e7bcc5f93f2ac5fc360071fa51b66c515e.png')
+        no-repeat center center;
+      background-size: cover;
+      border-radius: 15px;
+      height: 370px;
+      p {
+        font-family: 'Source Sans Pro';
+        font-weight: 400;
+        font-size: clamp(14px, 2vw, 24px);
+        color: #141718;
+        background: #fefffd;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+      }
+
+      @media (min-width: 1024px) {
+        width: calc(50% - 20px);
+      }
+    }
+    &-form {
+      h3 {
+        font-family: 'Source Sans Pro';
+        font-weight: bold;
+        font-size: clamp(20px, 2vw, 30px);
+        text-align: center;
+        color: #141718;
+        margin: 20px 0 15px;
+
+        @media (min-width: 1024px) {
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+      @media (min-width: 1024px) {
+        width: calc(50% - 20px);
+      }
+      form {
+        .form-control,
+        .form-select {
+          margin-bottom: 15px;
+          border-radius: 0;
+          border: none;
+          border-bottom: 1px solid #aa0e1780;
+          padding: 10px 0;
+          &:focus {
+            border-bottom: 1px solid #aa0e1780;
+            box-shadow: none;
+          }
+          &::placeholder {
+            font-family: 'Source Sans Pro';
+            font-size: 14px;
+            color: #14171880;
+          }
+        }
+
+        .form-select:invalid {
+          font-family: 'Source Sans Pro';
+          font-size: 14px;
+          color: #14171880;
+        }
+
+        .btn {
+          font-family: 'Source Sans Pro';
+          font-weight: 600;
+          font-size: clamp(14px, 1vw, 16px);
+          text-transform: uppercase;
+          border-radius: 15px;
+          height: 50px;
+          width: 100%;
+          margin: 15px 0 0;
+
+          @media (min-width: 1024px) {
+            width: calc(50% - 15px / 2);
+            margin: 50px 0 0;
+          }
+        }
+
+        .btn-submit {
+          background: #aa0e17;
+          color: #fefffd;
+          svg {
+            margin-left: 4px;
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        .btn-pricing {
+          background: #fefffd;
+          color: #aa0e17;
+          border: 1px solid #aa0e17;
+        }
+
+        @media (min-width: 1024px) {
+          textarea {
+            height: 63px;
+          }
+          .search-order-form form .form-select[name='state'],
+          .form-control:last-child {
+            width: calc(50% - 15px);
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .search-order-form form .form-select[name='state'] {
+      width: calc(50% - 15px);
+      margin-left: 15px;
+    }
+  }
+}

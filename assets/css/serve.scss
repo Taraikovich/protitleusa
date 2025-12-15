@@ -1,0 +1,105 @@
+.serve {
+  margin: 50px 0;
+  p {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #141718;
+    margin: 10px 0 20px;
+  }
+
+  .serve-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 440px;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 210px;
+      border: 1px solid #aa0e17;
+      border-radius: 15px;
+      padding: 20px;
+      transition: all 0.3s ease;
+      h4 {
+        font-family: 'Source Sans Pro';
+        font-weight: 700;
+        font-size: 21px;
+        color: #aa0e17;
+        transition: color 0.3s ease;
+      }
+      p {
+        font-family: 'Source Sans Pro';
+        font-weight: 400;
+        font-size: 14px;
+        color: #141718;
+        text-align: start;
+        transition: color 0.3s ease;
+      }
+      a {
+        font-family: 'Source Sans Pro';
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: #141718;
+        text-decoration-color: #aa0e17;
+        transition: all 0.3s ease;
+        &:hover {
+          color: #aa0e17;
+          text-decoration-color: #141718;
+        }
+      }
+      &:hover {
+        background: #aa0e17;
+        color: #fff;
+        cursor: pointer;
+        h4,
+        p,
+        a {
+          color: #fff;
+          text-decoration-color: #fff;
+        }
+      }
+    }
+    &-img {
+      width: 100%;
+      height: 210px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .swiper-slide {
+      &:nth-child(even) {
+        .serve-item {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .swiper-slide {
+      .serve-item {
+        flex-direction: row;
+        height: 250px;
+        &-text,
+        &-img {
+          width: calc(50% - 10px);
+          height: 100%;
+        }
+      }
+      &:nth-child(n + 5) {
+        .serve-item {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+}

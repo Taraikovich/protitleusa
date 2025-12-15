@@ -1,0 +1,25 @@
+.order-online {
+  margin: 50px 0;
+  h2 {
+    margin: 20px 0 15px;
+    font-size: clamp(20px, 3.5vw, 55px);
+
+    @media (min-width: 1024px) {
+      margin-top: 0;
+      text-align: start;
+      line-height: 110%;
+      max-width: 537px;
+    }
+  }
+
+  .search-order-text {
+    background: url(../img/order.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .search-order-text {
+      height: 460px;
+    }
+  }
+}
